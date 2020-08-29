@@ -81,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				A17132CD1F844BD600049020 /* AppDelegate.swift */,
-				A17132D91F844BD600049020 /* Info.plist */,
 			);
 			path = "App Start";
 			sourceTree = "<group>";
@@ -110,6 +109,7 @@
 				0938A60F24FA072800322730 /* Controller */,
 				0938A60E24FA070B00322730 /* View */,
 				A17132D41F844BD600049020 /* Assets.xcassets */,
+				A17132D91F844BD600049020 /* Info.plist */,
 			);
 			path = Mensagens;
 			sourceTree = "<group>";
