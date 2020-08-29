@@ -122,83 +122,6 @@
             </objects>
             <point key="canvasLocation" x="1266" y="133"/>
         </scene>
-        <!--Collor Picker View Controller-->
-        <scene sceneID="62W-ug-wPE">
-            <objects>
-                <viewController storyboardIdentifier="CollorPickerViewController" id="LmW-Fp-aXX" customClass="CollorPickerViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jl3-lu-V6u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nn1-hu-v3d">
-                                <rect key="frame" x="67.5" y="163.5" width="240" height="340"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ALj-Hp-cUi">
-                                        <rect key="frame" x="20" y="142" width="200" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="changeCollor:" destination="LmW-Fp-aXX" eventType="valueChanged" id="AWh-59-PfY"/>
-                                        </connections>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="psZ-z6-1HR">
-                                        <rect key="frame" x="20" y="192" width="200" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="minimumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="0.0" green="1" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="changeCollor:" destination="LmW-Fp-aXX" eventType="valueChanged" id="1yn-GA-ojc"/>
-                                        </connections>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZzX-KB-eRh">
-                                        <rect key="frame" x="20" y="241" width="200" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="changeCollor:" destination="LmW-Fp-aXX" eventType="valueChanged" id="YXd-Az-rnI"/>
-                                        </connections>
-                                    </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQD-qZ-ZYg">
-                                        <rect key="frame" x="22" y="287" width="196" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Escolher Cor"/>
-                                        <connections>
-                                            <action selector="ChooseCollor:" destination="LmW-Fp-aXX" eventType="touchUpInside" id="tzr-By-GJi"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MN-l5-HlP">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="fkQ-Yj-jff"/>
-                                    <constraint firstAttribute="height" constant="340" id="jwa-u6-bQZ"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="nn1-hu-v3d" firstAttribute="centerY" secondItem="Jl3-lu-V6u" secondAttribute="centerY" id="44T-xZ-a6p"/>
-                            <constraint firstItem="nn1-hu-v3d" firstAttribute="centerX" secondItem="Jl3-lu-V6u" secondAttribute="centerX" id="A38-YC-M5g"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="U0S-i4-Bgs"/>
-                    </view>
-                    <connections>
-                        <outlet property="slBlue" destination="ZzX-KB-eRh" id="9UM-ml-ory"/>
-                        <outlet property="slGreen" destination="psZ-z6-1HR" id="i7B-Gx-GIm"/>
-                        <outlet property="slRed" destination="ALj-Hp-cUi" id="EAz-xn-QNA"/>
-                        <outlet property="viCollor" destination="3MN-l5-HlP" id="7WW-3K-Unv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rjJ-8v-x4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1716" y="-560.86956521739137"/>
-        </scene>
         <!--Cor da tela-->
         <scene sceneID="Rxm-ll-x0z">
             <objects>
@@ -360,6 +283,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQk-9v-OYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-321" y="133"/>
+        </scene>
+        <!--CollorPickerViewController-->
+        <scene sceneID="6pC-MS-ur2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CollorPickerViewController" storyboardName="Slider" referencedIdentifier="CollorPickerViewController" id="xCQ-Vi-4xl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blk-7W-iUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-372"/>
         </scene>
     </scenes>
 </document>
