@@ -8,8 +8,8 @@
 import UIKit
 
 struct Message {
-    let text: String?
-    let textColor: UIColor?
-    let backgroundColor: UIColor?
-    let screenColor: UIColor?
+    var text: String?
+    var textColor: UIColor?
+    var backgroundColor: UIColor?
+    var screenColor: UIColor?
 }

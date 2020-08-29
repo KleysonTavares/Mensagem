@@ -8,8 +8,8 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-
+final class BaseViewController: UIViewController {
+    
     @IBOutlet weak var lbmessage: UILabel!
     var message: Message!
     
@@ -20,6 +20,4 @@ class BaseViewController: UIViewController {
     @IBAction func changeColor (_ sender: UIButton) {
         
     }
-    
-    
 }
