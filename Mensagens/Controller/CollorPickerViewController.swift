@@ -8,7 +8,12 @@
 
 import UIKit
 
+protocol CollorPickerDelegate: class {
+    func applyColor (color: UIColor)
+}
+
 class CollorPickerViewController: UIViewController {
+    
 
     @IBOutlet weak var viCollor: UIView!
     
@@ -16,8 +21,12 @@ class CollorPickerViewController: UIViewController {
     @IBOutlet weak var slGreen: UISlider!
     @IBOutlet weak var slBlue: UISlider!
     
+    //implementando o padrao DELEGATE
+    weak var delegate: CollorPickerDelegate? //weak para referencia fraca entre as classes
+    
     @IBAction func ChooseCollor(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        delegate?.applyColor(color: viCollor.backgroundColor!)
     }
     
     
@@ -31,16 +40,5 @@ class CollorPickerViewController: UIViewController {
         
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

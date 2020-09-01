@@ -159,8 +159,8 @@
                                     <action selector="changeColor:" destination="baW-qB-pkc" eventType="touchUpInside" id="jYt-Qi-der"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Z5-AYp">
-                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Z5-AYp">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtI-gn-XRV">
                                         <rect key="frame" x="306" y="14.5" width="51" height="31"/>
@@ -178,22 +178,24 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="FtI-gn-XRV" firstAttribute="leading" secondItem="FVb-3a-SJW" secondAttribute="trailing" constant="8" id="HMX-vg-ctP"/>
-                                    <constraint firstAttribute="trailing" secondItem="FtI-gn-XRV" secondAttribute="trailing" constant="20" id="Vrf-L4-Q6z"/>
-                                    <constraint firstItem="FtI-gn-XRV" firstAttribute="centerY" secondItem="tew-Z5-AYp" secondAttribute="centerY" id="cv7-bd-lar"/>
-                                    <constraint firstItem="FVb-3a-SJW" firstAttribute="centerY" secondItem="tew-Z5-AYp" secondAttribute="centerY" id="ne7-q9-kUQ"/>
-                                    <constraint firstAttribute="height" constant="60" id="rsf-jR-b0j"/>
+                                    <constraint firstAttribute="height" constant="60" id="Me4-9G-DDX"/>
+                                    <constraint firstItem="FtI-gn-XRV" firstAttribute="centerY" secondItem="tew-Z5-AYp" secondAttribute="centerY" id="RKL-xr-wNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="FtI-gn-XRV" secondAttribute="trailing" constant="20" id="XO4-oZ-tsG"/>
+                                    <constraint firstItem="FVb-3a-SJW" firstAttribute="centerY" secondItem="tew-Z5-AYp" secondAttribute="centerY" id="eIM-GB-4z6"/>
+                                    <constraint firstItem="FtI-gn-XRV" firstAttribute="leading" secondItem="FVb-3a-SJW" secondAttribute="trailing" constant="8" id="sCX-TU-V6p"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="tew-Z5-AYp" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" id="1rO-Qq-SFH"/>
                             <constraint firstItem="FOq-QF-Jxz" firstAttribute="trailing" secondItem="hh3-Lg-U6s" secondAttribute="trailing" constant="25" id="6dA-yX-lux"/>
                             <constraint firstItem="4gr-zU-vkM" firstAttribute="top" secondItem="hh3-Lg-U6s" secondAttribute="bottom" constant="10" id="Ff4-fe-Y0r"/>
                             <constraint firstItem="4gr-zU-vkM" firstAttribute="centerX" secondItem="hh3-Lg-U6s" secondAttribute="centerX" id="MXs-86-P2S"/>
                             <constraint firstItem="hh3-Lg-U6s" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" constant="25" id="dQJ-od-UWn"/>
+                            <constraint firstItem="tew-Z5-AYp" firstAttribute="trailing" secondItem="FOq-QF-Jxz" secondAttribute="trailing" id="egu-px-gJ1"/>
                             <constraint firstItem="hh3-Lg-U6s" firstAttribute="top" secondItem="FOq-QF-Jxz" secondAttribute="top" constant="20" id="guk-j0-SrF"/>
-                            <constraint firstItem="tew-Z5-AYp" firstAttribute="trailing" secondItem="FOq-QF-Jxz" secondAttribute="trailing" id="mso-7K-AyB"/>
-                            <constraint firstItem="tew-Z5-AYp" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" id="qoA-IL-LDk"/>
+                            <constraint firstItem="tew-Z5-AYp" firstAttribute="bottom" secondItem="FOq-QF-Jxz" secondAttribute="bottom" id="zs4-G2-MQs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FOq-QF-Jxz"/>
                     </view>

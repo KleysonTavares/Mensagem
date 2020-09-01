@@ -12,21 +12,16 @@ class MessageViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         message = Message()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! MessageColorViewController
         vc.message = message
     }
-    
-    override func changeColor(_ sender: UIButton) {
-        let collorPicker = storyboard?.instantiateViewController(withIdentifier: "CollorPickerViewController") as! CollorPickerViewController
-        collorPicker.modalPresentationStyle = .overCurrentContext
-        present(collorPicker, animated: true, completion: nil)
-    }
 }
     
-    //extenssao da classe textfield
+    //extensao da classe textfield
     extension MessageViewController: UITextFieldDelegate {
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             message.text = textField.text!
@@ -35,8 +30,15 @@ class MessageViewController: BaseViewController {
             
             return true
         }
-        
     }
+
+extension MessageViewController: CollorPickerDelegate {
+    func applyColor(color: UIColor){
+        lbmessage.textColor = color
+        message.textColor = color
+    }
+    
+}
     
     
 

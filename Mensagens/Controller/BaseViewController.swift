@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class BaseViewController: UIViewController {
+ class BaseViewController: UIViewController {
     
     @IBOutlet weak var lbmessage: UILabel!
     var message: Message!
@@ -18,6 +18,11 @@ final class BaseViewController: UIViewController {
     }
     
     @IBAction func changeColor (_ sender: UIButton) {
-        
+        if let reference = self as? CollorPickerDelegate {
+            let collorPicker = storyboard?.instantiateViewController(withIdentifier: "CollorPickerViewController") as! CollorPickerViewController
+            collorPicker.modalPresentationStyle = .overCurrentContext
+            collorPicker.delegate = reference // passar a classe como referencia
+            present(collorPicker, animated: true, completion: nil)
     }
+}
 }
